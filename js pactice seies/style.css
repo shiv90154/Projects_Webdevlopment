@@ -1,0 +1,16 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#center {
+    width: 400px;
+
+    height: 200px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid green;
+}
