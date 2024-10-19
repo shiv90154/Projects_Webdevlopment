@@ -1,0 +1,123 @@
+/* Import Google Font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000000;
+
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    background: rgb(129, 129, 129);
+    padding: 30px;
+    border: 1px dotted #000000;
+    border-radius: 7px;
+    width: 450px;
+    box-shadow: rgba(0, 0, 0, 0.05);
+}
+
+
+.wrapper h1 {
+    display: flex;
+    margin-left: 75px;
+    color: #fff;
+}
+
+.emoji {
+    font-size: 7rem;
+    cursor: pointer;
+
+}
+
+.emojis {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.closed,
+.open,
+.normal,
+.click {
+    display: none;
+}
+
+
+.active {
+    display: block;
+}
+
+.deactive {
+    display: none;
+}
+
+
+.wrapper .form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.form input {
+    border: 1px dashed gray;
+    border-radius: 5px;
+    font-size: 16px;
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 10px;
+    color: rgb(40, 40, 40);
+    font-weight: 500;
+    transition: all 0.4s;
+}
+
+input:focus {
+    background-color: #06c59c;
+    color: #fff;
+}
+
+.form input::placeholder {
+    color: #bfbfbf;
+}
+
+.form input:focus::placeholder {
+    color: #414141;
+}
+
+.form label {
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+
+.loginBtn {
+    margin-top: 20px;
+    width: 100%;
+    height: 55px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    border-radius: 7px;
+    color: #fff;
+    cursor: pointer;
+    background: #06c59c;
+    transition: 0.3s ease;
+}
+
+.loginBtn:hover {
+    background: #1d9ffc;
+}
